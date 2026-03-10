@@ -112,7 +112,7 @@ export default async function handler(req, res) {
   };
 
   // ── Call Gemini ──
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
   try {
     const geminiRes = await fetch(endpoint, {
